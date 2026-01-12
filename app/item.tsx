@@ -1,12 +1,13 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Button, Image, Text, View } from 'react-native';
+import { useCart } from '../context/CartContext';
 import { menu } from '../data/menu';
 
 export default function Item() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const item = menu.find((m) => m.id === id);
-
+const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
 
   if (!item) {

@@ -1,22 +1,29 @@
 import { router } from 'expo-router';
 import { Button, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { useCart } from '../context/CartContext';
 
 export default function Cart() {
+
+    const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
   return (
-<View style={{ flex: 1, padding: 20 }}>
-      <Text style={{ fontSize: 26, fontWeight: 'bold' }}>
-        Your Cart
-      
-      </Text>
+    <SafeAreaView style={{ flex: 1 }}>
+      <View style={{ padding: 20 }}>
+        <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 10 }}>
+          your cart
+        </Text>
 
-      <Text style={{ marginTop: 20 }}>
-        empty cart
-      </Text>
+        <Text>
+         empty cart
+        </Text>
 
-      <Button
-        title="Checkout"
-        onPress={() => router.push('/checkout' as any)}
-      />
-    </View>
+        <View style={{ marginTop: 30 }}>
+          <Button
+            title="Go to Checkout"
+            onPress={() => router.push('/checkout' as any)}
+          />
+        </View>
+      </View>
+    </SafeAreaView>
   );
 }
