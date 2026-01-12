@@ -1,6 +1,7 @@
 import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
+import { AuthProvider } from '@/context/AuthContext';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { Tabs } from 'expo-router';
 import React from 'react';
@@ -10,6 +11,7 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
 
   return (
+    <AuthProvider>
     <CartProvider>
       <Tabs
         screenOptions={{
@@ -34,5 +36,6 @@ export default function RootLayout() {
         />
       </Tabs>
     </CartProvider>
+    </AuthProvider>
   );
 }
