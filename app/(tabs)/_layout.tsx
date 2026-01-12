@@ -1,17 +1,17 @@
+import { CartProvider } from '@/context/CartContext';
 import { Tabs } from 'expo-router';
 import React from 'react';
 
 import { HapticTab } from '@/components/haptic-tab';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { Colors } from '@/constants/theme';
-import { CartProvider } from '@/context/CartContext';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
-    <CartProvider>  
+    <CartProvider>
       <Tabs
         screenOptions={{
           tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
@@ -19,6 +19,7 @@ export default function TabLayout() {
           tabBarButton: HapticTab,
         }}
       >
+        {/* Home tab */}
         <Tabs.Screen
           name="index"
           options={{
@@ -26,6 +27,8 @@ export default function TabLayout() {
             tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
           }}
         />
+
+        {/* Explore tab */}
         <Tabs.Screen
           name="explore"
           options={{
