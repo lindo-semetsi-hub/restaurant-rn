@@ -1,6 +1,7 @@
-import { Link } from 'expo-router';
-import { FlatList, Text, View } from 'react-native';
+import { router } from 'expo-router';
+import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import { menu } from '../data/menu';
+
 
 export default function Home() {
   return (
@@ -28,11 +29,13 @@ export default function Home() {
             <Text>{item.description}</Text>
             <Text style={{ marginTop: 5 }}>R{item.price}</Text>
 
-            <Link href={`/item?id=${item.id}`}>
-              <Text style={{ color: 'red', marginTop: 10 }}>
-                View Item →
-              </Text>
-            </Link>
+           <TouchableOpacity
+  onPress={() => router.push(`/item?id=${item.id}` as any)}
+>
+  <Text style={{ color: 'red', marginTop: 10 }}>
+    View Item →
+  </Text>
+</TouchableOpacity>
           </View>
         )}
       />
