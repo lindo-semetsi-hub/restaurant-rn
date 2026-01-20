@@ -8,14 +8,14 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
-import { menu } from '../data/menu';
+import { menu } from './data/menu';
 
 export default function HomeScreen() {
   const categories = Array.from(new Set(menu.map(item => item.category)));
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>Our Menu 🍗</Text>
+      <Text style={styles.title}>Our Menu </Text>
 
       {categories.map(category => (
         <View key={category} style={styles.categorySection}>
@@ -50,6 +50,8 @@ export default function HomeScreen() {
     </ScrollView>
   );
 }
+
+//styling 
 
 const styles = StyleSheet.create({
   container: {
