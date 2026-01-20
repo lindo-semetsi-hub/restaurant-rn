@@ -26,7 +26,7 @@ export default function Register() {
 
     const 
     success = register({ name, surname, email, password, contactNumber, address, cardNumber });
-    if (success) router.push('/index' as any);
+    if (success) router.push('/tabs' as any);
     else alert('Email already registered');
   };
 

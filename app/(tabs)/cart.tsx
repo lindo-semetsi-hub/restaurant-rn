@@ -1,13 +1,31 @@
 import { router } from 'expo-router';
 import { Button, ScrollView, Text, View } from 'react-native';
-import { useCart } from '../context/CartContext';
+import { useCart } from '../../context/CartContext';
+
+import { useAuth } from '@/context/AuthContext';
+
+
 
 export default function Cart() {
   const { cart, removeFromCart, clearCart, updateQuantity } = useCart();
-
+const { user } = useAuth();
   const total = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
 
+ if (!user)
+
+  {
   return (
+    <View style={{ padding: 20 }}>
+      <Text>Please login to access your cart.</Text>
+      <Button title="Go to Login" onPress={() => router.push('/login')} />
+    </View>
+  );
+}
+
+
+
+  return (
+
     <ScrollView style={{ flex: 1, padding: 20 }}>
       <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 10 }}>
         Your Cart 🛒

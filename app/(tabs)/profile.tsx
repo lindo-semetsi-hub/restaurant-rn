@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button, ScrollView, Text, TextInput } from 'react-native';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 
 export default function Profile() {
   const { user, updateProfile } = useAuth();

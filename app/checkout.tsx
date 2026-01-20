@@ -1,3 +1,4 @@
+import { useAuth } from '@/context/AuthContext';
 import { router } from 'expo-router';
 import { useState } from 'react';
 import { Button, ScrollView, Text, TextInput, View } from 'react-native';
@@ -7,7 +8,7 @@ export default function Checkout() {
   const { cart, clearCart } = useCart();
   const [address, setAddress] = useState('Default Address');
   const [card, setCard] = useState('0000-0000-0000-0000');
-
+const { user } = useAuth();
   const total = cart.reduce((sum, i) => sum + i.price * i.quantity, 0);
 
   const placeOrder = () => {
@@ -15,6 +16,11 @@ export default function Checkout() {
     clearCart();
     router.push('/index' as any);
   };
+
+  if (!user) {
+  router.replace('/login');
+  return null;
+}
 
   return (
     <ScrollView style={{ flex: 1, padding: 20 }}>
