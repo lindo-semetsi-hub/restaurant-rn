@@ -13,7 +13,7 @@ export const menu = [
     name: 'Chicken Liver Roll (Large)',
     description: 'Extra chicken livers with peri-peri sauce',
     price: "65",
-    image: 'https://i.imgur.com/1bX5QH6.png',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzMxNGQ4OWYyN2YwYzU3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTEzMmEwZTRmEAI=',
   },
 
   {
