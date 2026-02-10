@@ -1,7 +1,7 @@
 export const menu = [
   {
     id: 'roll-livers-small',
-    category: 'Rolls',
+    category: 'Livers & Roll',
     name: 'Chicken Liver Roll (Small)',
     description: 'Chicken livers in a fresh roll',
     price: "35",
@@ -9,7 +9,7 @@ export const menu = [
   },
   {
     id: 'roll-livers-large',
-    category: 'Rolls',
+    category: 'Livers & Roll',
     name: 'Chicken Liver Roll (Large)',
     description: 'Extra chicken livers with fresh roll',
     price: "55",
@@ -75,7 +75,7 @@ export const menu = [
     category: 'Chicken',
     name: '10 Chicken Nuggets',
     description: 'Golden crispy nuggets',
-    price: "49",
+    price: "79",
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpkMjY0MGJlZTgxYWI1ZmVhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NThmNWI0OTlmEAI=',
   },
 
@@ -116,6 +116,15 @@ export const menu = [
   },
 
   {
+    id: 'Roll-single',
+    category: 'Extras',
+    name: 'Roll - single',
+    description: 'Garlic/ Roll',
+    price: "11",
+    image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
+  },
+
+  {
     id: 'chips',
     category: 'Extras',
     name: 'Small Chips',
@@ -123,6 +132,7 @@ export const menu = [
     price: "21",
     image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
   },
+
 
   {
     id: 'chips',
