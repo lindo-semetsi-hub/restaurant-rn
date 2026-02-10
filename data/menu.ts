@@ -39,7 +39,7 @@ export const menu = [
     name: 'Quarter Chicken',
     description: 'Grilled Quarter chicken, single',
     price: "35",
-    image: 'https://thecookful.com/wp-content/uploads/2022/11/grilled-chicken-legs-square-01.jpg',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTo4M2ZlNjYyODliOGY5YzIzOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NjEwNGU0YjBmEAI=',
   },
 
   {
@@ -48,7 +48,7 @@ export const menu = [
     name: 'Half Chicken',
     description: 'Half chicken, single',
     price: "65",
-    image: 'https://media.istockphoto.com/id/1365836661/photo/half-of-the-rotisserie-chicken.jpg?s=612x612&w=0&k=20&c=2Z5Pyg5HFw2iw_EEaJAmGAOaH0rdjjaVRtBGg9uuzl4=',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTo4M2ZlNjYyODliOGY5YzIzOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NjEwNGU0YjBmEAI=',
   },
 
 
@@ -115,6 +115,33 @@ export const menu = [
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
   },
 
+{
+    id: 'pap-single',
+    category: 'Extras',
+    name: 'Pap',
+    description: 'Pap-single',
+    price: "15",
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+  },
+
+  {
+    id: 'chips',
+    category: 'Extras',
+    name: 'Small Chips',
+    description: 'Chips-small',
+    price: "21",
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+  },
+
+  {
+    id: 'chips',
+    category: 'Extras',
+    name: 'Large Chips',
+    description: 'Chips-large',
+    price: "29",
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+  },
+
   {
     id: 'Juice',
     category: 'Drinks',
@@ -130,6 +157,33 @@ export const menu = [
     name: 'Cappy Orange Juice',
     description: '330ml Cappy Orange',
     price: "13",
+    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
+  },
+
+  {
+    id: 'Coke',
+    category: 'Drinks',
+    name: 'Coke',
+    description: '330ml Coca Cola',
+    price: "15",
+    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
+  },
+
+  {
+    id: 'Fanta',
+    category: 'Drinks',
+    name: 'Fanta Orange',
+    description: '330ml Fanta Orange',
+    price: "15",
+    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
+  },
+
+  {
+    id: 'Spar Letta',
+    category: 'Drinks',
+    name: 'Spar Letta Creme Soda',
+    description: '330ml Spar Letta',
+    price: "15",
     image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
   },
 
