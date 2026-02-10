@@ -46,7 +46,7 @@ export const menu = [
     category: 'Chicken',
     name: '12 Chicken Wings',
     description: 'Perfect for sharing',
-    price: "R150",
+    price: "150",
     image: 'https://i.imgur.com/3ZQ3ZQG.png',
   },
 
