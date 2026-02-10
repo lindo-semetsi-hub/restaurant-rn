@@ -121,7 +121,7 @@ export const menu = [
     name: 'Pap',
     description: 'Pap-single',
     price: "15",
-    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+    image: 'https://images.squarespace-cdn.com/content/v1/5dcdc6859012af6fcd2b7ab3/1632194076222-593SI4MJ9NWVVU2J1C60/pap-pap.jpeg?format=1500w',
   },
 
   {
@@ -130,7 +130,7 @@ export const menu = [
     name: 'Small Chips',
     description: 'Chips-small',
     price: "21",
-    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+    image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
   },
 
   {
@@ -139,7 +139,7 @@ export const menu = [
     name: 'Large Chips',
     description: 'Chips-large',
     price: "29",
-    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+    image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
   },
 
   {
@@ -166,25 +166,25 @@ export const menu = [
     name: 'Coke',
     description: '330ml Coca Cola',
     price: "15",
-    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
+    image: 'https://www.shoprite.co.za/medias/10234069EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wxNjEzNDl8aW1hZ2UvcG5nfGltYWdlcy9oMzIvaDZhLzk5MTQ2MTkwMDI5MTAucG5nfDRlN2M3ZGJjYWZiYjAzMTFlODMwMjdlZjAzYmMyNWI5MDFiMTg3NTM3NmJhMWQ4NGQ1YjlkYTg3N2UyYjhmZjc',
   },
 
   {
     id: 'Fanta',
     category: 'Drinks',
     name: 'Fanta Orange',
-    description: '330ml Fanta Orange',
+    description: '300ml Fanta Orange',
     price: "15",
-    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
+    image: 'https://superbhyper.co.za/wp-content/uploads/2023/08/Fanta-Orange-Soft-Drink-Bottle-300ml.jpg',
   },
 
   {
     id: 'Spar Letta',
     category: 'Drinks',
     name: 'Spar Letta Creme Soda',
-    description: '330ml Spar Letta',
-    price: "15",
-    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
+    description: '440ml Spar Letta',
+    price: "17",
+    image: 'https://res.cloudinary.com/agrimark/image/upload/q_auto/f_auto/c_pad,h_570,w_570/v1/uploads/assets/564217-Sparletta-Creme-Soda-Pet-440Ml-c94d5a.png?_a=BAAAV6AI',
   },
 
 
