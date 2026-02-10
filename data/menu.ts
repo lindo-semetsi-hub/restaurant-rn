@@ -73,7 +73,7 @@ export const menu = [
     category: 'Meals',
     name: 'Chicken Salad Meal',
     description: 'Grilled chicken with fresh salad',
-    price: "R95",
+    price: "95",
     image: 'https://i.imgur.com/4A0Z6kN.png',
   },
 
