@@ -110,7 +110,7 @@ export const menu = [
     name: 'Cappy Orange Juice',
     description: '330ml Cappy Orange',
     price: "13",
-    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-apple-330ml-can-d.png/width1960.png',
+    image: 'https://www.coca-cola.com/content/dam/onexp/za/en/products/cappy-products-resized/desktop/cappy-spritzed-still-orange-330ml-can-d.png',
   },
 
 
