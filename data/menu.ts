@@ -4,7 +4,7 @@ export const menu = [
     category: 'Rolls',
     name: 'Chicken Liver Roll (Small)',
     description: 'Spicy chicken livers in a fresh roll',
-    price: "R45",
+    price: "45",
     image: 'https://i.imgur.com/1bX5QH6.png',
   },
   {
@@ -12,7 +12,7 @@ export const menu = [
     category: 'Rolls',
     name: 'Chicken Liver Roll (Large)',
     description: 'Extra chicken livers with peri-peri sauce',
-    price: "R65",
+    price: "65",
     image: 'https://i.imgur.com/1bX5QH6.png',
   },
 
@@ -21,7 +21,7 @@ export const menu = [
     category: 'Burgers',
     name: 'Chicken Burger',
     description: 'Grilled chicken burger with lettuce & mayo',
-    price: "R75",
+    price: "75",
     image: 'https://i.imgur.com/Oy8FZ9P.png',
   },
   {
@@ -29,7 +29,7 @@ export const menu = [
     category: 'Burgers',
     name: 'Double Chicken Burger',
     description: 'Two chicken fillets, extra sauce',
-    price: "R95",
+    price: "95",
     image: 'https://i.imgur.com/Oy8FZ9P.png',
   },
 
@@ -38,7 +38,7 @@ export const menu = [
     category: 'Chicken',
     name: '6 Chicken Wings',
     description: 'Peri-peri chicken wings',
-    price: "R85",
+    price: "85",
     image: 'https://i.imgur.com/3ZQ3ZQG.png',
   },
   {
@@ -55,7 +55,7 @@ export const menu = [
     category: 'Chicken',
     name: 'Chicken Nuggets',
     description: 'Golden crispy nuggets',
-    price: "R55",
+    price: "R5",
     image: 'https://i.imgur.com/2nCt3Sg.png',
   },
 
@@ -64,7 +64,7 @@ export const menu = [
     category: 'Meals',
     name: 'Grilled Chicken Meal',
     description: 'Quarter chicken with pap, rice or chips',
-    price: 110,
+    price: "110",
     image: 'https://i.imgur.com/7D7I6dI.png',
   },
 
@@ -82,7 +82,7 @@ export const menu = [
     category: 'Kids',
     name: 'Kids Nuggets Meal',
     description: 'Nuggets + chips + juice',
-    price: "R60",
+    price: "60",
     image: 'https://i.imgur.com/2nCt3Sg.png',
   },
 ];
