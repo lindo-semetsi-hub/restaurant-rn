@@ -55,7 +55,7 @@ export const menu = [
     category: 'Chicken',
     name: 'Chicken Nuggets',
     description: 'Golden crispy nuggets',
-    price: "R5",
+    price: "5",
     image: 'https://i.imgur.com/2nCt3Sg.png',
   },
 
