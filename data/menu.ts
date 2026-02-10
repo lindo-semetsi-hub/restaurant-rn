@@ -34,6 +34,25 @@ export const menu = [
   },
 
   {
+    id: 'quarter-chicken',
+    category: 'Chicken',
+    name: 'Quarter Chicken',
+    description: 'Grilled Quarter chicken, single',
+    price: "35",
+    image: 'https://thecookful.com/wp-content/uploads/2022/11/grilled-chicken-legs-square-01.jpg',
+  },
+
+  {
+    id: 'half-chicken',
+    category: 'Chicken',
+    name: 'Half Chicken',
+    description: 'Half chicken, single',
+    price: "65",
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=',
+  },
+
+
+  {
     id: 'wings-6',
     category: 'Chicken',
     name: '6 Chicken Wings',
@@ -41,12 +60,13 @@ export const menu = [
     price: "85",
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=',
   },
+
   {
     id: 'wings-12',
     category: 'Chicken',
     name: '12 Chicken Wings',
     description: 'Perfect for sharing',
-    price: "150",
+    price: "90",
     image: 'https://i.ihttps://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=mgur.com/3ZQ3ZQG.png',
   },
 
@@ -83,7 +103,7 @@ export const menu = [
     name: 'Chicken Salad Meal',
     description: 'Grilled chicken with fresh salad',
     price: "95",
-    image: 'https://i.imgur.com/4A0Z6kN.png',
+    image: 'https://onebalancedlife.com/wp-content/uploads/2022/06/Air-Fried-Chicken-Tender-Salad-768x1024.jpg',
   },
 
   {
