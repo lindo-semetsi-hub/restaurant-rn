@@ -119,9 +119,9 @@ export const menu = [
     id: 'Roll-single',
     category: 'Extras',
     name: 'Roll - single',
-    description: 'Garlic/ Roll',
+    description: 'Hamburger Roll',
     price: "11",
-    image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTphZjdiYzM0NTk4MjYyYWJhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NjY2YjlhYmJmEAI=',
   },
 
   {
