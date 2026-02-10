@@ -48,7 +48,7 @@ export const menu = [
     name: 'Half Chicken',
     description: 'Half chicken, single',
     price: "65",
-    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=',
+    image: 'https://media.istockphoto.com/id/1365836661/photo/half-of-the-rotisserie-chicken.jpg?s=612x612&w=0&k=20&c=2Z5Pyg5HFw2iw_EEaJAmGAOaH0rdjjaVRtBGg9uuzl4=',
   },
 
 
