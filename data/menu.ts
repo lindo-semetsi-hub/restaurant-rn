@@ -57,7 +57,7 @@ export const menu = [
     category: 'Chicken',
     name: '6 Chicken Wings',
     description: 'Peri-peri chicken wings',
-    price: "85",
+    price: "55",
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=',
   },
 
@@ -67,16 +67,7 @@ export const menu = [
     name: '12 Chicken Wings',
     description: 'Perfect for sharing',
     price: "90",
-    image: 'https://i.ihttps://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=mgur.com/3ZQ3ZQG.png',
-  },
-
-  {
-    id: 'nuggets',
-    category: 'Chicken',
-    name: '6 Chicken Nuggets',
-    description: 'Golden crispy nuggets',
-    price: "29",
-    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpkMjY0MGJlZTgxYWI1ZmVhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NThmNWI0OTlmEAI=',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTowZjY4NmI2NzZlNGFiNWM3OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NTg2NWU2YzFmEAI=',
   },
 
   {
