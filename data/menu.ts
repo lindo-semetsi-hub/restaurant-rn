@@ -85,4 +85,14 @@ export const menu = [
     price: "60",
     image: 'https://i.imgur.com/2nCt3Sg.png',
   },
+
+  {
+    id: 'Juice',
+    category: 'Drinks',
+    name: 'Cappy Orange Juice',
+    description: '330ml Cappy Orange',
+    price: "13",
+    image: 'https://i.imgur.com/2nCt3Sg.png',
+  },
+
 ];
