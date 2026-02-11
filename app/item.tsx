@@ -1,50 +1,106 @@
+import { useAuth } from '@/context/AuthContext';
+import { useCart } from '@/context/CartContext';
+import { menu } from '@/data/menu';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useState } from 'react';
-import { Button, Image, ScrollView, Text, View } from 'react-native';
-import { useCart } from '../context/CartContext';
-import { menu } from '../data/menu'; // mock data
+import React from 'react';
+import {
+  Alert,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
-export default function Item() {
-  const { id } = useLocalSearchParams<{ id: string }>();
-  const item = menu.find((m) => m.id === id);
+export default function ItemScreen() {
+  const { id } = useLocalSearchParams();
   const { addToCart } = useCart();
-  const [quantity, setQuantity] = useState(1);
+  const { user } = useAuth();
 
-  if (!item) return <Text>Item not found</Text>;
+  const item = menu.find((f) => f.id === id);
+
+  if (!item) {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.errorText}>Item not found.</Text>
+      </View>
+    );
+  }
+
+  const handleAddToCart = () => {
+    if (!user) {
+      Alert.alert('Login Required', 'You must login to add items to cart.');
+      router.push('/login');
+      return;
+    }
+
+    addToCart(item);
+    Alert.alert('Success', 'Item added to cart.');
+  };
 
   return (
-    <ScrollView style={{ padding: 20 }}>
-      <Image
-        source={{ uri: item.image }}
-        style={{ width: '100%', height: 200, borderRadius: 10 }}
-      />
-      <Text style={{ fontSize: 26, fontWeight: 'bold', marginTop: 15 }}>
-        {item.name}
-      </Text>
-      <Text style={{ marginVertical: 10 }}>{item.description}</Text>
-      <Text style={{ fontSize: 18, fontWeight: 'bold' }}>
-        Price: R{item.price}
-      </Text>
+    <ScrollView style={styles.container}>
+      <Image source={{ uri: item.image }} style={styles.image} />
 
-      {/* Quantity */}
-      <View style={{ flexDirection: 'row', alignItems: 'center', marginVertical: 20 }}>
-        <Button title="-" onPress={() => setQuantity(Math.max(1, quantity - 1))} />
-        <Text style={{ marginHorizontal: 20, fontSize: 18 }}>{quantity}</Text>
-        <Button title="+" onPress={() => setQuantity(quantity + 1)} />
+      <View style={styles.content}>
+        <Text style={styles.title}>{item.name}</Text>
+        <Text style={styles.price}>R {item.price}</Text>
+
+        <Text style={styles.description}>
+          {item.description}
+        </Text>
+
+        <TouchableOpacity style={styles.button} onPress={handleAddToCart}>
+          <Text style={styles.buttonText}>Add to Cart</Text>
+        </TouchableOpacity>
       </View>
-
-      <Button
-        title="Add to Cart"
-        onPress={() => {
-          addToCart({
-            id: item.id,
-            name: item.name,
-            price: item.price,
-            quantity,
-          });
-          router.push('/cart' as any);
-        }}
-      />
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0D0D0D',
+  },
+  content: {
+    padding: 20,
+  },
+  image: {
+    width: '100%',
+    height: 250,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+    marginBottom: 10,
+  },
+  price: {
+    fontSize: 20,
+    color: '#1E90FF',
+    marginBottom: 15,
+  },
+  description: {
+    color: '#CCCCCC',
+    fontSize: 16,
+    marginBottom: 25,
+  },
+  button: {
+    backgroundColor: '#1E90FF',
+    padding: 15,
+    borderRadius: 8,
+  },
+  buttonText: {
+    color: '#FFFFFF',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  errorText: {
+    color: 'red',
+    textAlign: 'center',
+    marginTop: 50,
+  },
+});
