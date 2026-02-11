@@ -1,70 +1,198 @@
 import { router } from 'expo-router';
-import { useState } from 'react';
-import { Button, ScrollView, Text, TextInput, View } from 'react-native';
+import React, { useState } from 'react';
+import {
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity
+} from 'react-native';
 import { useAuth } from '../context/AuthContext';
 
-export default function Register() {
+export default function RegisterScreen() {
   const { register } = useAuth();
 
-
-
-
-  const [name, setName] = useState('');
-  const [surname, setSurname] = useState('');
+  const [name, setName] = useState(''); const [surname, setSurname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [contactNumber, setContactNumber] = useState('');
+
   const [address, setAddress] = useState('');
   const [cardNumber, setCardNumber] = useState('');
 
-  const 
-  handleRegister = () => {
-    if (!name || !surname || !email || !password || !contactNumber || !address || !cardNumber) {
-      alert('Please fill all fields');
+  const [error, setError] = useState('');
+
+  const handleRegister = () => {
+    setError('');
+
+    if (!name ||
+      !surname ||
+      !email ||
+      !password ||
+      !contactNumber ||
+      !address ||
+      !cardNumber
+    ) {
+      setError('Please fill in all fields.');
       return;
     }
 
-    const 
-    success = register({ name, surname, email, password, contactNumber, address, cardNumber });
-    if (success) router.push('/tabs' as any);
-    else alert('Email already registered');
+          if (cardNumber.length !== 16) {
+    
+      
+      setError('Card number must be exactly 16 digits.');
+      return;
+    }
+
+    const success = register({
+      name,
+          surname,
+         email,
+       password,
+      contactNumber,
+
+      address,
+
+      cardNumber,
+    });
+
+    if (!success) {
+      setError('Email already registered.');
+      return;
+    }
+
+    router.replace('/(tabs)');
+  };
+
+  const handleCardChange = (text: string) => {
+
+    //no numeric characters
+    const numericText = text.replace(/[^0-9]/g, '');
+
+          //limiting card numbers to 16 numbers
+    if (numericText.length <= 16) {
+      setCardNumber(numericText);
+    }
   };
 
   return (
-    <ScrollView style={{ padding: 20 }}>
-      <Text style={{ fontSize: 26, fontWeight: 'bold', marginBottom: 20 }}>Register</Text>
+    <ScrollView contentContainerStyle={styles.container}>
+      <Text style={styles.title}>Create Account</Text>
 
-      <Text>Name:</Text>
+      {error ? <Text style={styles.error}>{error}</Text> : null}
 
-      <TextInput value={name} onChangeText={setName} style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
+            <TextInput
+        placeholder="Name"
+        placeholderTextColor="#aaa"
+        style={styles.input}
+        value={name}
+        onChangeText={setName}
+      />
 
-      <Text>Surname:</Text>
+      <TextInput
+        placeholder="Surname"
+        placeholderTextColor="#aaa"
+        style={styles.input}
+        value={surname}
+        onChangeText={setSurname}
+      />
 
-      <TextInput value={surname} onChangeText={setSurname} style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
+      <TextInput
+        placeholder="Email"
+        placeholderTextColor="#aaa"
+        style={styles.input}
+        value={email}
+        onChangeText={setEmail}
+        keyboardType="email-address"
+        autoCapitalize="none"
+      />
 
-      <Text>Email:</Text>
-      <TextInput value={email} onChangeText={setEmail} keyboardType="email-address" style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
+      <TextInput
+        placeholder="Password"
+        placeholderTextColor="#aaa"
+        style={styles.input}
+        value={password}
+        onChangeText={setPassword}
+        secureTextEntry
+      />
 
-      <Text>Password:</Text>
+        <TextInput placeholder="Contact Number"
+           placeholderTextColor="#aaa"
+          style={styles.input}
+           value={contactNumber}
+             onChangeText={setContactNumber}
+            keyboardType="phone-pad"
+      />
 
+      <TextInput
+        placeholder="Address"
+        placeholderTextColor="#aaa"
+        style={styles.input}
+        value={address}
+        onChangeText={setAddress}
+      />
 
-      <TextInput value={password} onChangeText={setPassword} secureTextEntry style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
+      <TextInput
+        placeholder="Card Number (16 digits)"
+        placeholderTextColor="#aaa"
+        style={styles.input}
+        value={cardNumber}
+        onChangeText={handleCardChange}
+        keyboardType="numeric"
+        maxLength={16}
+      />
 
-      <Text>Contact Number:</Text>
+      <TouchableOpacity style={styles.button} onPress={handleRegister}>
+        <Text style={styles.buttonText}>Register</Text> </TouchableOpacity>
 
-      
-      <TextInput value={contactNumber} onChangeText={setContactNumber} style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
-
-      <Text>Address:</Text>
-      <TextInput value={address} onChangeText={setAddress} style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
-
-      <Text>Card Number:</Text>
-      <TextInput value={cardNumber} onChangeText={setCardNumber} keyboardType="numeric" style={{ borderWidth: 1, padding: 10, marginVertical: 5 }} />
-
-      <Button title="Register" onPress={handleRegister} />
-      <View style={{ marginTop: 10 }}>
-        <Button title="Back to Login" onPress={() => router.push('/login' as any)} />
-      </View>
+      <TouchableOpacity onPress={() => router.push('/login')}>
+        <Text style={styles.link}>Already have an account? Login</Text> </TouchableOpacity>
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    backgroundColor: '#0D0D0D',
+    padding: 24,
+    justifyContent: 'center',
+  },
+
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#FFFFFF',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+
+
+  input: {
+    backgroundColor: '#1A1A1A',
+    color: '#FFFFFF',
+    padding: 14,
+    borderRadius: 8,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: '#1E90FF',
+  },
+  button: {backgroundColor: '#1E90FF',
+    padding: 15,
+    borderRadius: 8,
+    marginTop: 10,
+  },
+  buttonText: {color: '#FFFFFF',
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  link: {color: '#1E90FF',
+     marginTop: 15,
+    textAlign: 'center',
+  },
+  error: { color: '#FF4C4C',
+    marginBottom: 10,
+    textAlign: 'center',
+  },
+});
