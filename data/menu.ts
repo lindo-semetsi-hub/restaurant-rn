@@ -1,3 +1,12 @@
+export type MenuItem = {
+  id: string;
+  category: string;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+};
+
 export const menu = [
   {
     id: 'roll-livers-small',
@@ -111,7 +120,7 @@ export const menu = [
     category: 'Extras',
     name: 'Pap',
     description: 'Pap-single',
-    price: 15,
+    price: 13,
     image: 'https://images.squarespace-cdn.com/content/v1/5dcdc6859012af6fcd2b7ab3/1632194076222-593SI4MJ9NWVVU2J1C60/pap-pap.jpeg?format=1500w',
   },
 
@@ -120,7 +129,7 @@ export const menu = [
     category: 'Extras',
     name: 'Roll - single',
     description: 'Hamburger Roll',
-    price: 13,
+    price: 11,
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTphZjdiYzM0NTk4MjYyYWJhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NjY2YjlhYmJmEAI=',
   },
 
@@ -129,7 +138,7 @@ export const menu = [
     category: 'Extras',
     name: 'Small Chips',
     description: 'Chips-small',
-    price: 13,
+    price: 21,
     image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
   },
 
@@ -139,7 +148,7 @@ export const menu = [
     category: 'Extras',
     name: 'Large Chips',
     description: 'Chips-large',
-    price: 13,
+    price: 29,
     image: 'https://www.cookwell.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fg1s4qnmz%2Fproduction%2F82694af53c1e85caca322e435067067806223518-2500x2500.jpg&w=3840&q=75',
   },
 
