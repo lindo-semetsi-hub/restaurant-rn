@@ -61,7 +61,7 @@ export default function RegisterScreen() {
       return;
     }
 
-    router.replace('/(tabs)');
+    router.replace('/login');
   };
 
   const handleCardChange = (text: string) => {
