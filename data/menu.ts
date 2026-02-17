@@ -152,6 +152,15 @@ export const menu = [
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTo0YzE2MWY0ZTQyMDFjYjFhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMDdlMmI0MjBmEAI=',
   },
 
+  {
+    id: 'family-meal-1',
+    category: 'Family Meals',
+    name: 'Burger, nuggets, chips + drinks combo',
+    description: '2 Grilled chicken Burgers, 6 chicken nuggets + 2 small chips + 2 drinks',
+    price: 210,
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTo3OGM4MzE0NWVjZDVlMzk0OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMGJlMmNmYzVmEAI=',
+  },
+
 {
     id: 'pap-single',
     category: 'Extras',
