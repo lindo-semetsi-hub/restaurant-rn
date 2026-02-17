@@ -130,7 +130,7 @@ export const menu = [
     name: 'Wings with chips + drink',
     description: '4 Chicken with large chips and drink',
     price: 61,
-    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MToxOWUxMzE2NzNjZTFiODUwOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMGEzZjE3YzNmEAI=',
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTo5OGE3MDRlZjA5MzczOTY1OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMGE5ZTdkNWRmEAI=',
   },
 
 
