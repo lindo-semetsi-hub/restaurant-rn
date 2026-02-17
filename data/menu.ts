@@ -115,6 +115,24 @@ export const menu = [
     price: 95,
     image: 'https://onebalancedlife.com/wp-content/uploads/2022/06/Air-Fried-Chicken-Tender-Salad-768x1024.jpg',
   },
+  {
+    id: 'wings-meal',
+    category: 'Meals',
+    name: 'Wings with chips',
+    description: '4 Chicken with large chips',
+    price: 51,
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MToxOWUxMzE2NzNjZTFiODUwOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMGEzZjE3YzNmEAI=',
+  },
+
+  {
+    id: 'wings-meal',
+    category: 'Meals',
+    name: 'Wings with chips + drink',
+    description: '4 Chicken with large chips and drink',
+    price: 61,
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MToxOWUxMzE2NzNjZTFiODUwOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMGEzZjE3YzNmEAI=',
+  },
+
 
   {
     id: 'kids-nuggets',
