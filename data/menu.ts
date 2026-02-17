@@ -82,6 +82,16 @@ export const menu = [
   {
     id: 'nuggets',
     category: 'Chicken',
+    name: '6 Chicken Nuggets',
+    description: 'Golden crispy nuggets',
+    price: 49,
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpkMjY0MGJlZTgxYWI1ZmVhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NThmNWI0OTlmEAI=',
+  },
+
+
+  {
+    id: 'nuggets',
+    category: 'Chicken',
     name: '10 Chicken Nuggets',
     description: 'Golden crispy nuggets',
     price: 89,
@@ -110,9 +120,18 @@ export const menu = [
     id: 'kids-nuggets',
     category: 'Kids',
     name: 'Kids Nuggets Meal',
-    description: 'Nuggets + chips + juice',
+    description: '4 Nuggets + chips + juice',
     price: 59,
     image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTpiNzc1Yjg1NzEyZjNkYzZhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGE3NWI4MjdkZTJmEAI=',
+  },
+
+  {
+    id: 'kids-burger',
+    category: 'Kids',
+    name: 'Kids Chicken Cheese Burger Meal',
+    description: 'Burger + chips + juice',
+    price: 69,
+    image: 'https://lens.usercontent.google.com/banana?agsi=CmdnbG9iYWw6OjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAwZWI6MTo0YzE2MWY0ZTQyMDFjYjFhOjAwMDA1NWNmZWM3MDAyNmQ6MDAwMDAxNmQ4OGEwMzM2ODowMDA2NGIwMDdlMmI0MjBmEAI=',
   },
 
 {
