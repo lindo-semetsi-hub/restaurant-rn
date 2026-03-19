@@ -80,7 +80,7 @@ export const menu = [
   },
 
   {
-    id: 'nuggets',
+    id: 'nuggets-6',
     category: 'Chicken',
     name: '6 Chicken Nuggets',
     description: 'Golden crispy nuggets',
@@ -90,7 +90,7 @@ export const menu = [
 
 
   {
-    id: 'nuggets',
+    id: 'nuggets-10',
     category: 'Chicken',
     name: '10 Chicken Nuggets',
     description: 'Golden crispy nuggets',
